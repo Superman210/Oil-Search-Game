@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Oil Search</title>
+	<meta name="viewport" content="user-scalable=no, initial-scale=1,maximum-scale=1" />
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script type="text/javascript" src=" https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+
+</head>
+<body class="body">
+	<div class="container clear-fix">
+		<form class="main_form">
+			<div class="left_stage col-lg-3 col-md-3 col-sm-3">
+				<div class="status">
+					<ul class="pump_status">
+						<li>
+							<img src="./img/pump1.png">
+							<label id="count0"> 0 </label>
+							<span>/30</span>
+						</li>
+						<li>
+							<img src="./img/pump2.png">
+							<label id="count1"> 0 </label>
+							<span>/30</span>
+						</li>
+						<li>
+							<img src="./img/pump3.png">
+							<label id="count2"> 0 </label>
+							<span>/30</span>
+						</li>
+						<li>
+							<img src="./img/pump4.png">
+							<label id="count3"> 0 </label>
+							<span>/30</span>
+						</li>
+						<li>
+							<img src="./img/pump5.png">
+							<label id="count4"> 0 </label>
+							<span>/30</span>
+						</li>
+						<li>
+							<img src="./img/pump6.png">
+							<label id="count5"> 0 </label>
+							<span>/30</span>
+						</li>
+						<li>
+							<img src="./img/pump7.png">
+							<label id="count6"> 0 </label>
+							<span>/30</span>
+						</li>
+						<li>
+							<img src="./img/truck.png">
+							<label id="capacity"> 0 </label>
+							<span>/20</span>
+						</li>
+					</ul>
+				</div>
+				<div class="drill_btn">
+					<button onclick="drill()" type="button"> Drill</button>
+				</div>
+				<div class="fill_up_btn">
+					<button onclick="fillUp()" type="button"> Fill Up</button>
+				</div>
+				<div class="info">
+					<label class="collect"> Total Collected : </label>
+					<label id="total"> 0 </label>
+				</div>
+			</div>	
+			<div class="right_stage col-lg-9 col-md-9 col-sm-9">
+				<img class="truck" id="truck" width="30" height="30" src="./img/truck.png" style="display: none">
+				<img class="city1" id="city1" width="30" height="30" src="./img/city1.png" style="display: none">
+				<img class="city2" id="city2" width="30" height="30" src="./img/city2.png" style="display: none">
+				<img class="empty" id="empty" width="30" height="30" src="./img/empty.png" style="display: none">
+				<img class="adjacent" id="adjacent" width="30" height="30" src="./img/adjacent.png" style="display: none">
+				<img class="pump1" id="pump0" width="30" height="30" src="./img/pump1.png" style="display: none">
+				<img class="pump2" id="pump1" width="30" height="30" src="./img/pump2.png" style="display: none">
+				<img class="pump3" id="pump2" width="30" height="30" src="./img/pump3.png" style="display: none">
+				<img class="pump4" id="pump3" width="30" height="30" src="./img/pump4.png" style="display: none">
+				<img class="pump5" id="pump4" width="30" height="30" src="./img/pump5.png" style="display: none">
+				<img class="pump6" id="pump5" width="30" height="30" src="./img/pump6.png" style="display: none">
+				<img class="pump7" id="pump6" width="30" height="30" src="./img/pump7.png" style="display: none">
+				<canvas id="scene" width="640" height="640"></canvas>
+			</div>
+	</form>
+	</div>	
+</body>
+<!-- <script type="text/javascript" src='js/main.js'></script> -->
+<script type="text/javascript" src = "./js/truck.js"></script>
+</html>

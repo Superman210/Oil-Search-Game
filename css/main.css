@@ -1,0 +1,57 @@
+.body {
+	background-color: #ecf2f7;
+}
+form {
+	background: white;
+    margin-top: 5%;
+    box-shadow: 4px 1px 2px 5px rgba(171,171,171,0.5);
+    padding-top: 2%;
+    height: 685px;
+}
+img {
+	width: 40px;
+	margin-right: 20px;
+}
+li {
+	list-style: none;
+    margin-top: 5px;
+}
+button {
+	background-color: #cfead0;
+    padding: 15px 15px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 35px;
+    width: 150px;
+    outline: none;
+}
+.status {
+	display: block;
+}
+.pump_status{
+    font-size: 20px;
+    margin-top: 30px;
+}
+.info {
+	margin-top: 30px;
+    font-size: 19px;
+    position: absolute;
+    left: 30px;
+    top: 530px;
+}
+.drill_btn{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    position: absolute;
+    left: 35px;
+    top: 380px;
+}
+.fill_up_btn {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    position: absolute;
+    left: 35px;
+    top: 450px;   
+}
